@@ -11,7 +11,7 @@ player = gets.strip
 puts "\nWelcome #{player}! Enter (q)uit to exit the app at any time."
 
 # Quiz Component
-quiz = Quiz.new(player,3)
+quiz = Quiz.new(player,10)
 while quiz.quiz_finished? == false do
     quiz.display_question
     answer = gets.strip.downcase

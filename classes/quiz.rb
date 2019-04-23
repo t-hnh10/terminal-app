@@ -26,4 +26,8 @@ class Quiz
     def display_score
         puts ("You got " + @score.to_s + "/" + @questions.length().to_s)
     end
+
+    def quiz_finished?
+        return @next_question == @questions.length
+    end
 end

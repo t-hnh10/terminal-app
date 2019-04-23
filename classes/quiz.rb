@@ -1,8 +1,8 @@
 require_relative '../populate_questions'
 
 class Quiz
-    def initialize(player)
-        @questions = get_questions
+    def initialize(player,num_questions)
+        @questions = get_questions(num_questions)
         @next_question = 0
         @score = 0
         @player = player
@@ -10,11 +10,11 @@ class Quiz
 
     def display_question
         puts @questions[@next_question].question
-        user_answer = gets.chomp
+        puts @questions[@next_question].options
     end
 
-    def check_answer
-        if user_answer == @questions.answer
+    def check_answer(user_answer)
+        if user_answer == @questions[@next_question].answer
             @score += 1
             @next_question += 1
             puts "Correct!"

@@ -1,5 +1,5 @@
 class GeoQuestion
-    attr_accessor :question, :answer
+    attr_accessor :question, :options, :answer
     
     def initialize(question, options, answer)
         @question = question

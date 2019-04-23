@@ -19,6 +19,7 @@ class Quiz
             @next_question += 1
             puts "Correct!"
         else
+            @next_question += 1
             puts "Incorrect!"
         end
     end

@@ -24,9 +24,9 @@ class Quiz
     end
 
     def display_score
-
+        puts ("You got " + @score.to_s + "/" + @questions.length().to_s)
     end
 end
 
-# test = Quiz.new("Janel")
-# test.display_question
+test = Quiz.new("Janel")
+test.display_score

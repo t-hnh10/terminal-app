@@ -16,12 +16,11 @@ class Quiz
     def check_answer(user_answer)
         if user_answer == @questions[@next_question].answer
             @score += 1
-            @next_question += 1
             puts "Correct!"
         else
-            @next_question += 1
             puts "Incorrect!"
         end
+        @next_question += 1
     end
 
     def display_score

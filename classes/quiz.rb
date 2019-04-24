@@ -9,6 +9,7 @@ class Quiz
     end
 
     def display_question
+        puts ""
         puts @questions[@next_question].question
         puts @questions[@next_question].options
     end
@@ -24,6 +25,7 @@ class Quiz
     end
 
     def display_score
+        puts ""
         puts ("You got " + @score.to_s + "/" + @questions.length().to_s)
     end
 

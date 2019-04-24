@@ -1,4 +1,4 @@
-require_relative './classes/geo_question'
+require_relative './classes/geoquestion'
 
 def get_questions(how_many)
    questions = [

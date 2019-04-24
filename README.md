@@ -69,7 +69,7 @@ For example, the specific topics we refer to within our questions may be conside
 
 The brainstorming component of the project occurred primarily on *17 April 2019*. A collaborative Google Doc was created where both parties could access and provide input. Screenshots may be found below:
 
-![Brainstorming1](docs/Brainstorming.png "Brainstorming Document")
+![Brainstorming1](docs/brainstorming.png "Brainstorming Document")
 
 ### User Stories
 
@@ -80,6 +80,8 @@ The following user stories were formulated:
 - US-4: As a user, I can choose to answer questions provided by the quiz or quit at any time.
 
 ### Project Plan & Timeline
+
+![Timeline] (docs/timeline.png "Project Plan & Timeline")
 
 ### Overall App Design Description
 

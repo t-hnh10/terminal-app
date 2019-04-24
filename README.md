@@ -6,7 +6,7 @@ GitHub Repository Link: https://github.com/t-hnh10/terminal-app
 
 ### Purpose
 
-The purpose of 'The Geo Quiz App' is to assess a user's knowledge in connection with our wider world, to discover new insights and push the limits of human knowledge to a realm unmatched by any other!
+The purpose of '**The Geo Quiz App**' is to assess a user's knowledge in connection with our wider world, to discover new insights and push the limits of human knowledge to a realm unmatched by any other!
 
 In order to achieve this goal of peak intellect, the terminal application posits itself as a quiz that challenges a user with geography-related questions and scores said user with the magic of built-in functions.
 
@@ -67,9 +67,17 @@ For example, the specific topics we refer to within our questions may be conside
 
 ### App Idea Brainstorming
 
-![brainstorming document](docs/)
+The brainstorming component of the project occurred primarily on ***17 April 2019***. A collaborative Google Doc was created where both parties could access and provide input. Screenshots may be found below:
 
-### User stories
+![Brainstorming1](docs/Brainstorming1.png "Brainstorming Document Part 1") ![Brainstorming2](docs/Brainstorming2.png "Brainstorming Document Part 2")
+
+### User Stories
+
+The following user stories were formulated:
+- US-1: As a Quiz app, I can welcome the user and ask for their name, then create a personalised greeting.
+- US-2: As a Quiz App, I can quiz the user with questions.
+- US-3: As a Quiz App, I can tally the total points of the user and print their score.
+- US-4: As a user, I can choose to answer questions provided by the quiz or quit at any time.
 
 ### Project Plan & Timeline
 

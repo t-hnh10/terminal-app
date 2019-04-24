@@ -67,9 +67,9 @@ For example, the specific topics we refer to within our questions may be conside
 
 ### App Idea Brainstorming
 
-The brainstorming component of the project occurred primarily on *17 April 2019*. A collaborative Google Doc was created where both parties could access and provide input. Screenshots may be found below:
+The brainstorming component of the project occurred primarily on ***17 April 2019***. A collaborative Google Doc was created where both parties could access and provide input. Screenshots may be found below:
 
-![Brainstorming1](docs/Brainstorming1.png | width=100 "Brainstorming Document Part 1") ![Brainstorming2](docs/Brainstorming2.png | width=100 "Brainstorming Document Part 2")
+![Brainstorming1](docs/Brainstorming1.png "Brainstorming Document Part 1") ![Brainstorming2](docs/Brainstorming2.png "Brainstorming Document Part 2")
 
 ### User Stories
 

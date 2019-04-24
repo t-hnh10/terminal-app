@@ -107,6 +107,7 @@ However, we realised there were difficulties with this as we were becoming confu
 ### Group Communication
 
 As we collaborated on the terminal application in person throughout the two days, 23 and 24 April, communication predominantly took place in person. However, Slack was utilised to communicate and send each other links and resources. Some screenshots of this mentioned communication can be found below:
+
 ![Slack 1](docs/slack1.png "Slack Communication Screenshot 1")
 ![Slack 2](docs/slack2.png "Slack Communication Screenshot 2")
 ![Slack 3](docs/slack3.png "Slack Communication Screenshot 3")

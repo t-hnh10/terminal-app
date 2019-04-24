@@ -90,7 +90,7 @@ The application design was straightforward and followed the process as establish
 2. A new file titled 'populate_questions.rb' was created in order to hold a method that would randomly generate a question. This was achieved in several steps:
     - A method called 'get_questions' was defined and setup to accept an element. This element will determine how many questions will be generated when the 'get_questions' method is called.
     - An array was created. Inside this array, new instances were created while calling the GeoQuestion class. As noted above, this class expects three (3) elements which is hardcoded into the new instance. That is, the question, options, and answer.
-    - After the array, the '.sample' method is called upon the array to actually generate the random question.
+    - After the array, the '.sample' method is called upon the array to generate the random question.
 3. A Quiz class was created. This class initializes certain instance variables including @questions, @next_question, @score and @player. Certain methods are also defined; these methods deliver the core function of the app in displaying the question to the user, checking the answer, displaying the score, and determining whether there are remaining questions to display to the user.
 4. A 'main' app was then created in order to incorporate the different components of the Quiz App together. The main app itself is quite minimal, simply displaying a title/welcome screen, and calling on methods defined in the Quiz class. These methods were incorporated within a 'while loop' that will continue to run while there are remaining questions. It also allows the user to break from the loop and quit the application at any time.
 
@@ -106,7 +106,7 @@ However, we realised there were difficulties with this as we were becoming confu
 
 ### Group Communication
 
-As we collaborated on the terminal application in person throughout the two days, 23 and 24 April, communication predominantly took place in person. However, we did make use of Slack to communicate when it came to sending each other links and resources. Some screenshots of this mentioned communication can be found below:
-![Slack 1](docs/slack1.png "Slack Communication Screenshot 1")
-![Slack 2](docs/slack2.png "Slack Communication Screenshot 2")
-![Slack 3](docs/slack3.png "Slack Communication Screenshot 3")
+As we collaborated on the terminal application in person throughout the two days, 23 and 24 April, communication predominantly took place in person. However, Slack was utilised to communicate and send each other links and resources. Some screenshots of this mentioned communication can be found below:
+![Slack 1](docs/slack1.png "Slack Communication Screenshot 1"){:height="30%" width="30%"}
+![Slack 2](docs/slack2.png "Slack Communication Screenshot 2"){:height="30%" width="30%"}
+![Slack 3](docs/slack3.png "Slack Communication Screenshot 3"){:height="30%" width="30%"}

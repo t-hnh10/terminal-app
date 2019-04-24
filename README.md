@@ -81,7 +81,7 @@ The following user stories were formulated:
 
 ### Project Plan & Timeline
 
-![Timeline](docs/timeling.png "Project Plan & Timeline")
+![Timeline](docs/timeline.png "Project Plan & Timeline")
 
 ### Overall App Design Description
 

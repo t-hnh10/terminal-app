@@ -17,7 +17,7 @@ Upon launch, the name of the user is requested. Once the name has been inputted,
 - Secondly, the user may start answering some questions.
 (Not sure why you would not want to push the limits of human knowledge!)
 
-The terminal application is simple in nature, for more reasons than one. Most importantly, options provided to the user are kept to a minimum in order to maximise the efficiency of the application's purpose. That is, to allow fellow earthlings to learn with minimal accessibility concerns (including those who do not consider themselves technically literate).
+The terminal application is simple in nature, for more reasons than one. Most importantly, options provided to the user are kept to a minimum in order to maximise the efficiency of the application's purpose. That is, to allow fellow earthlings to learn with minimal accessibility concerns (including those who do not consider themselves computer literate).
 
 ### Instructions
 
@@ -79,6 +79,16 @@ The following user stories were formulated:
 - US-3: As a Quiz App, I can tally the total points of the user and print their score.
 - US-4: As a user, I can choose to answer questions provided by the quiz or quit at any time.
 
+### App Control Flow
+
+Original control flow:
+![Control Flow](docs/control_flow.png "Original Flowchart")
+
+During the review period, we encountered a less than ideal situation where the app would end suddenly. The user is not given an option to be provided with a new set of questions and play again. This problem required us to revisit the application flowchart. After an update to the flowchart, it became clear a new loop was necessary in order to give the user the option to play again. This can be seen below:
+
+Updated control flow:
+![Control Flow](docs/control_flow_new.png "Updated Flowchart")
+
 ### Project Plan & Timeline
 
 ![Timeline](docs/timeline.png "Project Plan & Timeline")
@@ -88,8 +98,8 @@ The following user stories were formulated:
 The application design was straightforward and followed the process as established in our Trello Board. It may be described as follows:
 1. A GeoQuestion class was created that essentially acts as a data structure for which we could code questions following that defined template. The class was defined to accept three elements, namely the question, (multiple choice) options and the (correct) answer.
 2. A new file titled 'populate_questions.rb' was created in order to hold a method that would randomly generate a question. This was achieved in several steps:
-    - A method called 'get_questions' was defined and setup to accept an element. This element will determine how many questions will be generated when the 'get_questions' method is called.
-    - An array was created. Inside this array, new instances were created while calling the GeoQuestion class. As noted above, this class expects three (3) elements which is hardcoded into the new instance. That is, the question, options, and answer.
+    - A method called 'get_questions' was defined and setup to accept an element. This element will determine the number of questions generated when the 'get_questions' method is called.
+    - An array was created. Inside this array, new instances were created while calling the GeoQuestion class. As noted above, this class expects three (3) elements which are hardcoded into the new instance. That is, the question, options, and answer.
     - After the array, the '.sample' method is called upon the array to generate the random question.
 3. A Quiz class was created. This class initializes certain instance variables including @questions, @next_question, @score and @player. Certain methods are also defined; these methods deliver the core function of the app in displaying the question to the user, checking the answer, displaying the score, and determining whether there are remaining questions to display to the user.
 4. A 'main' app was then created in order to incorporate the different components of the Quiz App together. The main app itself is quite minimal, simply displaying a title/welcome screen, and calling on methods defined in the Quiz class. These methods were incorporated within a 'while loop' that will continue to run while there are remaining questions. It also allows the user to break from the loop and quit the application at any time.
@@ -99,6 +109,15 @@ The application design was straightforward and followed the process as establish
 The application design process was somewhat altered as we progressed with development. Originally, the classes and their methods were to be completed in entirety before incorporating them into a 'main' app that ties the different components together.
 
 However, we realised there were difficulties with this as we were becoming confused with *how* the components tied together. By recommendation, we proceeded to create the 'main' app file before we had completed the classes and methods. Alongside the project plan and application flowchart, this assisted us in gaining a clearer perspective of the tasks required before the application would have all necessary functions.
+
+### Testing
+
+Testing was an integral component of the development process. It was done at essentially every stage of coding, especially when new methods were defined. Said tests were recorded in a Google Sheets document we both had access to.
+
+![Test 1](docs/test1.png "Test Spreadsheet 1")
+![Test 2](docs/test2.png "Test Spreadsheet 2")
+![Test 3](docs/test3.png "Test Spreadsheet 3")
+
 
 ### Screenshots of Trello Board
 

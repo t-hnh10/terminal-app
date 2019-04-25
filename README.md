@@ -38,6 +38,8 @@ Running the application:
 
 ### Screenshots
 
+![Screenshot](docs/screenshot.gif "Application Screenshot")
+
 ### Future enhancements
 - Create a User class that will be able to store a player's login details, password and game save data to an external file;
 - Create multiple difficulty levels and have corresponding sets of questions to those levels; and
@@ -102,13 +104,14 @@ The application design was straightforward and followed the process as establish
     - An array was created. Inside this array, new instances were created while calling the GeoQuestion class. As noted above, this class expects three (3) elements which are hardcoded into the new instance. That is, the question, options, and answer.
     - After the array, the '.sample' method is called upon the array to generate the random question.
 3. A Quiz class was created. This class initializes certain instance variables including @questions, @next_question, @score and @player. Certain methods are also defined; these methods deliver the core function of the app in displaying the question to the user, checking the answer, displaying the score, and determining whether there are remaining questions to display to the user.
-4. A 'main' app was then created in order to incorporate the different components of the Quiz App together. The main app itself is quite minimal, simply displaying a title/welcome screen, and calling on methods defined in the Quiz class. These methods were incorporated within a 'while loop' that will continue to run while there are remaining questions. It also allows the user to break from the loop and quit the application at any time.
+4. A 'main' app was then created in order to incorporate the different components of the Quiz App together. The main app itself is quite minimal, calling on methods defined in the Quiz class. These methods were incorporated within a 'while loop' that will continue to run while there are remaining questions. It also allows the user to break from the loop and quit the application at any time.
+5. Throughout the design process, we continually considered the DRY principle and the final step was another manifestation of this consideration. The welcome and farewell message was originally coded twice into the 'main' app. However, after realising they both employed common elements, we created a Message class with methods that would allow us to call on the welcome and farewell messages as we needed them. As a result, the code in the 'main' app became cleaner and easier to read.
 
 ### Design Considerations
 
 The application design process was somewhat altered as we progressed with development. Originally, the classes and their methods were to be completed in entirety before incorporating them into a 'main' app that ties the different components together.
 
-However, we realised there were difficulties with this as we were becoming confused with *how* the components tied together. By recommendation, we proceeded to create the 'main' app file before we had completed the classes and methods. Alongside the project plan and application flowchart, this assisted us in gaining a clearer perspective of the tasks required before the application would have all necessary functions.
+However, we realised there were difficulties with this as we were becoming confused with *how* the components tied together. Inefficiency occurred where the code required constant refactoring to function with new implementations. By recommendation, we proceeded to create the 'main' app file before we had completed the classes and methods. Alongside the project plan and application flowchart, this assisted us in gaining a clearer perspective of the tasks required before the application would have all necessary functions.
 
 ### Testing
 
@@ -125,7 +128,7 @@ Testing was an integral component of the development process. It was done at ess
 
 ### Group Communication
 
-As we collaborated on the terminal application in person throughout the two days, 23 and 24 April, communication predominantly took place in person. However, Slack was utilised to communicate and send each other links and resources. Some screenshots of this mentioned communication can be found below:
+As we collaborated on the terminal application in person throughout the two days, 23 and 24 April, communication predominantly took place in person. However, Slack was utilised to communicate and send each other links and resources. Post-completion of the MVP, we also implemented the 'catpix' gem while working remotely. It was at this stage that we also used Slack for discussion and providing assistance to each other. Some screenshots of this mentioned communication can be found below:
 
 ![Slack 1](docs/slack1.png "Slack Communication Screenshot 1")
 ![Slack 2](docs/slack2.png "Slack Communication Screenshot 2")

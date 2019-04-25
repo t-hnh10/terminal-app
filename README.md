@@ -51,9 +51,9 @@ Accessibility is and has always been a key part of the application's philosophy,
 
 However, one specific concern arose from the use of the 'artii' gem for the title text. The original name of the application was 'The Geography Quiz App', not overly creative but incredibly unwieldy. The title was far too long, where we could no longer ensure most users would experience appropriate sizing within their terminal. Additionally, and quite simply, it was difficult to read even to those of ordinary sight. Thus, the application was renamed and made more *accessible*.
 
-### Potential societal concerns
+### Potential social concerns
 
-As a quiz application with basic functionality, it is not immediately evident whether there are any societal concerns (whether they be legal, moral, ethical, cultural, political, etc).
+As a quiz application with basic functionality, it is not immediately evident whether there are any social concerns (whether they be legal, moral, ethical, cultural, political, etc).
 
 However, the questions that were provided to the quiz application were handpicked and, as such, prone to bias. As the questions are centered upon the topic of geography, the two largest potential concerns relate to cultural and political issues.
 
@@ -72,6 +72,11 @@ For example, the specific topics we refer to within our questions may be conside
 The brainstorming component of the project occurred primarily on *17 April 2019*. A collaborative Google Doc was created where both parties could access and provide input. Screenshots may be found below:
 
 ![Brainstorming1](docs/brainstorming.png "Brainstorming Document")
+
+On 23 April 2019, we brainstormed application specifics such as possible implementations (e.g. how to store our question data). Below are images of that aspect where assistance was provided by Varsha and Janel.
+
+![Design 1](docs/design1.png "Design Document Part 1")
+![Design 1](docs/design2.png "Design Document Part 2")
 
 ### User Stories
 

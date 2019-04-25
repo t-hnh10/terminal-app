@@ -56,7 +56,7 @@ However, one specific concern arose from the use of the 'artii' gem for the titl
 
 As a quiz application with basic functionality, it is not immediately evident whether there are any social concerns (whether they be legal, moral, ethical, cultural, political, etc).
 
-However, the questions that were provided to the quiz application were handpicked and, as such, prone to bias. As the questions are centered upon the topic of geography, the two largest potential concerns relate to cultural and political issues.
+However, the questions that were provided to the quiz application were handpicked and, as such, prone to bias. As the questions are centered upon the topic of geography, the two largest potential concerns related to cultural and political issues.
 
 For example, the specific topics we refer to within our questions may be considered taboo, offensive or objectionable by a certain group of people. Certain examples are listed below:
 - Territorial sovereignty

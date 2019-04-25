@@ -1,5 +1,8 @@
+# Allows for use of GeoQuestion class
 require_relative './classes/geoquestion'
 
+# Method to return a random question within questions array
+# Accepts how_many parameter to determine quantity of questions to display
 def get_questions(how_many)
    questions = [
       GeoQuestion.new("In which country does edelweiss not grow natively?",

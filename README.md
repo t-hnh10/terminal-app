@@ -33,7 +33,8 @@ Ensuring appropriate gems are installed:
 2. Navigate to the project root directory in Terminal and install all of the required gems with the following command: `bundle install`.
 
 Running the application:
-1. In Terminal, simply enter the following command: `ruby main.rb`; and
+1. In Terminal, ensure your working directory is within the `src` folder.
+2. Simply enter the following command: `ruby main.rb`; and
 2. Enjoy!
 
 ### Screenshots
@@ -59,11 +60,11 @@ However, the questions that were provided to the quiz application were handpicke
 
 For example, the specific topics we refer to within our questions may be considered taboo, offensive or objectionable by a certain group of people. Certain examples are listed below:
 - Territorial sovereignty
-    - Many regions of the world are disputed between nations (e.g. Taiwan, Arunachal Pradesh, Senkaku Islands, etc)
+    - Many regions of the world are disputed between nations (e.g. Taiwan, Arunachal Pradesh, Senkaku Islands, Gibraltar, etc)
 - Religion
     - Reference to controversial passages within religious text
 - Demography
-    - Stating the existence of certain groups of people in some territories may be considered inflammatory (e.g. the Rohingya in Myanmar)
+    - Stating the existence of certain groups of people and their population numbers in some territories may be considered inflammatory (e.g. the Rohingya in Myanmar)
 
 ## Design & Planning Process
 
@@ -73,7 +74,7 @@ The brainstorming component of the project occurred primarily on *17 April 2019*
 
 ![Brainstorming1](docs/brainstorming.png "Brainstorming Document")
 
-On 23 April 2019, we brainstormed application specifics such as possible implementations (e.g. how to store our question data). Below are images of that aspect where assistance was provided by Varsha and Janel.
+On *23 April 2019*, we brainstormed application specifics such as possible implementations (e.g. how to store our question data). Below are images of that aspect where assistance was provided by Varsha and Janel.
 
 ![Design 1](docs/design1.png "Design Document Part 1")
 ![Design 1](docs/design2.png "Design Document Part 2")
@@ -110,7 +111,7 @@ The application design was straightforward and followed the process as establish
     - After the array, the '.sample' method is called upon the array to generate the random question.
 3. A Quiz class was created. This class initializes certain instance variables including @questions, @next_question, @score and @player. Certain methods are also defined; these methods deliver the core function of the app in displaying the question to the user, checking the answer, displaying the score, and determining whether there are remaining questions to display to the user.
 4. A 'main' app was then created in order to incorporate the different components of the Quiz App together. The main app itself is quite minimal, calling on methods defined in the Quiz class. These methods were incorporated within a 'while loop' that will continue to run while there are remaining questions. It also allows the user to break from the loop and quit the application at any time.
-5. Throughout the design process, we continually considered the DRY principle and the final step was another manifestation of this consideration. The welcome and farewell message was originally coded twice into the 'main' app. However, after realising they both employed common elements, we created a Message class with methods that would allow us to call on the welcome and farewell messages as we needed them. As a result, the code in the 'main' app became cleaner and easier to read.
+5. Throughout the design process, we continually considered the DRY principle and the final step was another manifestation of this consideration. The welcome and farewell messages were originally coded twice into the 'main' app. However, after realising they both employed common elements, we created a Message class with methods that would allow us to call on the welcome and farewell messages as we needed them. As a result, the code in the 'main' app became cleaner and easier to read.
 
 ### Design Considerations
 
@@ -133,7 +134,7 @@ Testing was an integral component of the development process. It was done at ess
 
 ### Group Communication
 
-As we collaborated on the terminal application in person throughout the two days, 23 and 24 April, communication predominantly took place in person. However, Slack was utilised to communicate and send each other links and resources. Post-completion of the MVP, we also implemented the 'catpix' gem while working remotely. It was at this stage that we also used Slack for discussion and providing assistance to each other. Some screenshots of this mentioned communication can be found below:
+As we collaborated on the terminal application in person throughout the two days, *23* and *24 April*, communication predominantly took place in person. However, Slack was utilised to communicate and send each other links and resources. Post-completion of the MVP, we also implemented the 'catpix' gem while working remotely. It was at this stage that we also used Slack for discussion and providing assistance to each other. Some screenshots of this mentioned communication can be found below:
 
 ![Slack 1](docs/slack1.png "Slack Communication Screenshot 1")
 ![Slack 2](docs/slack2.png "Slack Communication Screenshot 2")

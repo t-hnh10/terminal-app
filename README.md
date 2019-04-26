@@ -115,7 +115,9 @@ The application design was straightforward and followed the process as establish
 
 ### Design Considerations
 
-The application design process was somewhat altered as we progressed with development. Originally, the classes and their methods were to be completed in entirety before incorporating them into a 'main' app that ties the different components together.
+The application design process was somewhat altered as we progressed with development. The most difficult component of developing the structure of the application was the design of how we could store our set of question data. We had intended on utilising hashes, assigning the key element to the question and value element to the answer. However, this was not so trivial when we had to think about implementing a multiple choice answer model. Thus, we thought it be most appropriate to use an array to store the three elements of our question data. As detailed above, the data could call the GeoQuestion class and further its utility.
+
+Originally, the classes and their methods were to be completed in entirety before incorporating them into a 'main' app that ties the different components together.
 
 However, we realised there were difficulties with this as we were becoming confused with *how* the components tied together. Inefficiency occurred where the code required constant refactoring to function with new implementations. By recommendation, we proceeded to create the 'main' app file before we had completed the classes and methods. Alongside the project plan and application flowchart, this assisted us in gaining a clearer perspective of the tasks required before the application would have all necessary functions.
 
